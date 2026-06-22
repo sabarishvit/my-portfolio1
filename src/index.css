@@ -1,0 +1,130 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #0f172a;
+  background-color: #eef2f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eef2f6;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar for professional look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 99px;
+  border: 2px solid #f1f5f9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animations */
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #4f46e5; }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) scale(1.05);
+  }
+  50% {
+    transform: translateY(15px) scale(0.95);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* Interactive Utility Classes */
+.btn-primary-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-primary-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4), 0 8px 10px -6px rgba(79, 70, 229, 0.4) !important;
+  filter: brightness(1.05);
+}
+
+.btn-secondary-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-secondary-hover:hover {
+  background-color: rgba(79, 70, 229, 0.05) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(79, 70, 229, 0.1) !important;
+}
+
+.nav-link-hover {
+  transition: all 0.2s ease !important;
+}
+.nav-link-hover:hover {
+  color: #4f46e5 !important;
+  background-color: rgba(79, 70, 229, 0.05);
+  border-radius: 8px;
+}
+
+.input-focus {
+  transition: all 0.2s ease;
+}
+.input-focus:focus {
+  border-color: #4f46e5 !important;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15) !important;
+  background-color: #ffffff !important;
+}
+
+/* Floating animation classes */
+.float-element-1 {
+  animation: float-slow 8s ease-in-out infinite;
+}
+.float-element-2 {
+  animation: float-reverse 10s ease-in-out infinite;
+}
+
+
