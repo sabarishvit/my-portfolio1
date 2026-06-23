@@ -19,7 +19,17 @@ function NavBar({ activeSection, onNavClick }) {
 
   return (
     <nav style={styles.nav}>
-      <div style={styles.logo}>{"Sabarish"}</div>
+      <div style={{ display: "flex", alignItems: "center", gap: "14px", flexShrink: 0 }}>
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: "block", flexShrink: 0 }}>
+          <polygon points="20,4 36,13 36,27 20,36 4,27 4,13" fill="none" stroke="#c9a227" strokeWidth="2" />
+          <path d="M14 17 Q14 14 17 14 L23 14 Q26 14 26 17 Q26 20 20 20 Q26 20 26 23 Q26 26 23 26 L17 26 Q14 26 14 23" stroke="#c9a227" strokeWidth="2.2" fill="none" strokeLinecap="round" />
+        </svg>
+        <div style={{ width: "1.5px", height: "40px", backgroundColor: "#c9a227", opacity: 0.7, flexShrink: 0 }} />
+        <div style={{ display: "flex", flexDirection: "column", gap: "4px", flexShrink: 0 }}>
+          <span style={{ fontSize: "18px", fontWeight: "700", color: "#c9a227", letterSpacing: "2px", lineHeight: "1", display: "block" }}>SABARISH</span>
+          <span style={{ fontSize: "15px", color: "#c9a227", letterSpacing: "3px", lineHeight: "1", opacity: 0.85, display: "block" }}>INSIGHTS | SOLUTIONS | IMPACT</span>
+        </div>
+      </div>
       <div style={styles.navLinks}>
         {/* 🔁 .map() loops over an array and renders one element per item */}
         {links.map((link) => (
@@ -381,6 +391,7 @@ export default function App() {
       <div id="contact"><ContactSection /></div>
 
       <footer style={styles.footer}>
+
       </footer>
     </div>
   );
@@ -411,6 +422,9 @@ const styles = {
     background: "#0A1628",
     borderBottom: "1px solid rgba(255, 255, 255, 0.06)",
     boxShadow: "0 4px 24px rgba(0, 0, 0, 0.2)",
+    backgroundColor: "#0d1b2e",
+    minHeight: "72px",
+    alignItems: "center",
   },
 
   logo: {
