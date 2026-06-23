@@ -381,7 +381,6 @@ export default function App() {
       <div id="contact"><ContactSection /></div>
 
       <footer style={styles.footer}>
-        Built with ❤️ using React · {new Date().getFullYear()}
       </footer>
     </div>
   );
