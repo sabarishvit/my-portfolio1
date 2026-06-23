@@ -313,12 +313,18 @@ function ContactSection() {
           {[
             { icon: "📧", label: "sabuelan@gmail.com" },
             { icon: "📱", label: "+91 96556 44509" },
-            { icon: "💼", label: "linkedin.com/in/sabarish-e-b533aa3aa/" },
-            { icon: "📍", label: "https://github.com/sabarishvit" },
+            { icon: "💼", label: "LinkedIn", href: "https://linkedin.com/in/sabarish-e-b533aa3aa/" },
+            { icon: "📍", label: "GitHub", href: "https://github.com/sabarishvit" },
           ].map((item) => (
             <div key={item.label} style={styles.contactItem}>
               <span>{item.icon}</span>
-              <span style={styles.contactText}>{item.label}</span>
+              {item.href ? (
+                <a href={item.href} target="_blank" rel="noopener noreferrer" style={{ ...styles.contactText, color: "#475569", textDecoration: "none" }}>
+                  {item.label}
+                </a>
+              ) : (
+                <span style={styles.contactText}>{item.label}</span>
+              )}
             </div>
           ))}
         </div>
