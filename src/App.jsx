@@ -257,7 +257,7 @@ function ProjectsSection() {
       link: "https://inventory-allo.vercel.app/",
     },
     {
-      emoji: "🌤️",
+      emoji: "🎬",
       title: "Movie Search Website",
       description: "Developed a movie search application using React JS that allows users to search for movies and view details like ratings and descriptions by fetching data from a movie API.",
       tags: ["React", "API", "useEffect"],
