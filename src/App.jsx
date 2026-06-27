@@ -944,7 +944,7 @@ function Footer({ onNavClick }) {
         ))}
       </nav>
       <div className="footer-copy">
-        © {new Date().getFullYear()} <span>Sabarish</span>. Crafted with ⚛️ React & ❤️ passion.
+        © {new Date().getFullYear()} <span>Sabarish</span>.
       </div>
     </footer>
   );
