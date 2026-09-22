@@ -282,7 +282,7 @@ function NavBar({ active, onNavClick }) {
 // ─── COMPONENT: HeroSection ───────────────────────────────
 function HeroSection({ onNavClick }) {
   const phrases = [
-    "Business Analyst & Problem Solver",
+    "Problem Solver",
     "Frontend Developer (React & Next.js)",
     "Solution-Oriented Professional",
     "Process Improvement Enthusiast",
@@ -450,7 +450,7 @@ function AboutSection() {
     { icon: "🎓", label: "Degree", value: "Integrated M.Tech Software Engineering" },
     { icon: "📍", label: "Location", value: "Vellore, India" },
     { icon: "💼", label: "Status", value: "Open to Opportunities" },
-    { icon: "🎵", label: "Interests", value: "Music & Cricket" },
+    { icon: "🎵", label: "Interests", value: "Building, Exploring, Learning new Tech Stacks" },
   ];
 
   const chips = [
@@ -563,15 +563,15 @@ function SkillsSection() {
   const [ref, visible] = useReveal(0.1);
 
   const skills = [
-    { icon: "⚛️", name: "React", category: "Frontend Framework", level: 60, color: "#06b6d4" },
+    { icon: "⚛️", name: "React", category: "Frontend Framework", level: 70, color: "#06b6d4" },
     { icon: "🌐", name: "HTML & CSS", category: "Web Fundamentals", level: 70, color: "#e44d26" },
-    { icon: "⚡", name: "JavaScript", category: "Core Language", level: 70, color: "#f7df1e" },
-    { icon: "▲", name: "Next.js", category: "Full-Stack Framework", level: 40, color: "#94a3b8" },
-    { icon: "🐙", name: "Git & GitHub", category: "Version Control", level: 60, color: "#7c3aed" },
+    { icon: "⚡", name: "JavaScript", category: "Core Language", level: 60, color: "#f7df1e" },
+    { icon: "▲", name: "Next.js", category: "Full-Stack Framework", level: 60, color: "#94a3b8" },
+    { icon: "🐙", name: "Git & GitHub", category: "Version Control", level: 70, color: "#7c3aed" },
   ];
 
   const tools = [
-    "VS Code", "Figma", "Postman", "Vercel", "npm", "Chrome DevTools",
+    "VS Code", "Figma", "Vercel", "npm", "Chrome DevTools",
     "GitHub", "REST APIs", "JSON", "Flexbox", "CSS Grid", "React Hooks",
   ];
 
@@ -681,6 +681,16 @@ function ProjectsSection() {
       accent: "#10b981",
     },
     {
+      emoji: "💊",
+      title: "AI-Powered Pharmacovigilance Case Processing Pipeline",
+      description:
+        "Built frontend interfaces for the human-in-the-loop review workflow, allowing reviewers to validate LLM-generated medical coding (MedDRA/WHO Drug) and causality scores (Naranjo/WHOUMC) before submission..",
+      tags: ["python", "React.js", "LLMs"],
+      link: "https://github.com/sabarishvit/AI-Powered-Pharmacovigilance-Case-Processing-Pipeline",
+      ghLink: "https://github.com/sabarishvit/AI-Powered-Pharmacovigilance-Case-Processing-Pipeline",
+      accent: "#10b981",
+    },
+    {
       emoji: "🎬",
       title: "Movie Search Application",
       description:
@@ -730,7 +740,6 @@ function ProjectsSection() {
     </section>
   );
 }
-
 // ─── COMPONENT: ContactSection ────────────────────────────
 function ContactSection() {
   const [ref, visible] = useReveal(0.1);
@@ -944,7 +953,7 @@ function Footer({ onNavClick }) {
         ))}
       </nav>
       <div className="footer-copy">
-        © {new Date().getFullYear()} <span>Sabarish</span>.
+        © {new Date().getFullYear()} <span>Sabarish</span>. Crafted with ⚛️ React & ❤️ passion.
       </div>
     </footer>
   );
